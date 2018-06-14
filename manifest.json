@@ -1,0 +1,21 @@
+{
+  "name" : "Google WebMaster Tools Bulk add parameters",
+  "version" : "0.1",
+  "manifest_version": 2,
+  "description": "http://montesremotedeveloper.com/",
+  "content_scripts" : [
+    {
+      "matches" : ["https://www.google.com/webmasters/tools/crawl-url-parameters*"],
+      "js" : ["bulk_add_parameters.js"]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "https://www.google.com/webmasters/*"
+  ]
+}
+
